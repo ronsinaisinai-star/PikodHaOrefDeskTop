@@ -171,9 +171,6 @@ section
   color: white;
   text-align: center;
   align-items: center;
-  transition:
-      transform 0.2s,
-      flex 0.2s cubic-bezier(0.61,0.19, 0.7,0.11);
   text-shadow:
       -0.5px -0.5px 0 #000,  
        0.5px -0.5px 0 #000,
@@ -239,7 +236,7 @@ flex:4
     transform: translateY(0);
   }
 
-/* @media screen and (min-width:500px) 
+@media screen and (min-width:500px) 
 {
 .to-scroll
 {
@@ -252,4 +249,51 @@ flex:4
     transform: translateX(0);
     transform: translateY(0);
   }
-} */
+  p{
+    font-size: 2.5em
+  }
+  h3{
+    height: 70.5px;
+    font-size: 3rem;
+  }
+  .districtlist
+  {
+    position: relative;
+    top: -22%;
+    height: 25%; 
+    width: auto;
+  }
+  .panel
+  {
+    margin-top: 0;
+    margin-bottom: 30%;
+    width: 50%;
+  }
+  .panel>img
+  {
+    width: 82%;
+  }
+  h2
+  {
+    font-size: 4.5rem;
+  }
+  .face-button
+  {
+    margin: 20% auto;
+  }
+  .face-button {
+    height: 8vh;
+  
+  }
+  .face-button .face-primary, .face-button .face-secondary
+  {
+    line-height:  8vh;
+  }
+  .face-primary,.face-secondary
+  {
+    font-size: 2.5rem;
+  }
+  .face-button:hover .face-primary {
+    margin-top: -8vh;
+  }
+}
