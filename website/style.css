@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('//fonts.googleapis.com/css?family=Roboto:500');
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
 *
 {
   padding: 0;
@@ -34,7 +37,7 @@ h2
 }
 h3{
   font-size: 2em;
-  margin:2vh 2vw 2vh 0;
+  margin:3vh 2vw 2vh 0;
 
 }
 .maincontiner
@@ -43,7 +46,7 @@ h3{
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  padding-top: 1vh;
+  padding-top: 0vh;
 }
 .title{
        text-align: center;
@@ -60,10 +63,11 @@ section
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  display: grid;
 }
 .section1mainpic
 {
-  margin-top:10vh ;
+  margin-top:0vh ;
   position: relative;
   width: 92vw;
   display: block;
@@ -85,6 +89,14 @@ section
   box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
 
 }
+.to-scroll
+{
+  transform: TranslateX(-70%);
+  transition: all 0.3s ease-in ;
+  transition-delay: 0.1s;
+}
+
+
 .districtlist
 {
   width: 50vw;
@@ -99,7 +111,13 @@ section
   display: flex;
   flex-direction: column;
 }
-
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+}
 /* .citylist2
 {
   border-radius: 3%;
@@ -134,9 +152,104 @@ section
   transition: .5s;
 }
 
-
 .citylist:hover { flex: 1 1 50%; }
 .citylist:hover > img {
   width: 100%;
   height: 100%;
 }
+
+.panels {
+  margin-top: 2%;
+  min-height: 25vh;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  
+}
+.panel {
+  margin: 50% 1%;
+  color: white;
+  text-align: center;
+  align-items: center;
+  transition:
+      transform 0.2s,
+      flex 0.2s cubic-bezier(0.61,0.19, 0.7,0.11);
+  text-shadow:
+      -0.5px -0.5px 0 #000,  
+       0.5px -0.5px 0 #000,
+       -0.5px 0.5px 0 #000,
+        0.5px 0.5px 0 #000;
+  font-size: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.panel>img {
+  width: 100%;
+}
+.panel:hover{
+flex:4
+}
+
+.face-button {
+  margin: 48% auto;
+  height: 6vh;
+  width: 44%;
+  display: inline-block;
+  border: 3px solid rgb(255, 153, 0);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color:rgb(255, 153, 0);
+  overflow: hidden;
+}
+.face-button .icon {
+    margin-right: 6px;
+  }
+  
+  .face-button .face-primary, .face-button .face-secondary
+  {
+    display: block;
+    padding: 0 32px;
+    line-height:  6vh;
+    transition: margin .4s;
+  }
+  
+.to-scroll-up
+{
+  transform: translateY(10vh);
+  transition: all 1s ease-in ;
+  transition-delay: 0.3s;
+}
+  .face-button .face-primary {
+    background-color:rgb(255, 153, 0);;
+    color: #fff;
+  }
+  
+  .face-button:hover .face-primary {
+    margin-top: -6vh;
+  }
+
+  .in-scroll
+  {
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+
+/* @media screen and (min-width:500px) 
+{
+.to-scroll
+{
+  transform: translateX(-10vw);
+  transition: all 0.3s ease-in ;
+  transition-delay: 0.1s;
+}
+.in-scroll
+  {
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+} */

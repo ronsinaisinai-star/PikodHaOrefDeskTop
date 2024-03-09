@@ -126,6 +126,9 @@ namespace PikodAorfLayout
         }
         private void startupadder()
         {
+            try
+            {
+
             WshShell wshShell = new WshShell();
             IWshRuntimeLibrary.IWshShortcut shortcut;
             string startUpFolderPath =
@@ -136,12 +139,16 @@ namespace PikodAorfLayout
               (IWshRuntimeLibrary.IWshShortcut)wshShell.CreateShortcut(
                 startUpFolderPath + "\\" +
                 Forms.Application.ProductName + ".lnk");
-
             shortcut.TargetPath = Forms.Application.ExecutablePath;
             shortcut.WorkingDirectory = Forms.Application.StartupPath;
             shortcut.Description = "pikoad haoref Appliction";
             shortcut.IconLocation = Forms.Application.StartupPath + @"\icon.ico";
             shortcut.Save();
+            }
+            catch
+            {
+                AddTostartUp();
+            }
         }
 
         private void _notifyIcon_Exit(object? sender, EventArgs e)

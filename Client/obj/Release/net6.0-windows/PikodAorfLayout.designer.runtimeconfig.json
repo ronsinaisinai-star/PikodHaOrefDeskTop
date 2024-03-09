@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Gigi\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Gigi\\.nuget\\packages"
+      "C:\\Users\\gigi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\gigi\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Reflection.Metadata.MetadataUpdater.IsSupported": false,

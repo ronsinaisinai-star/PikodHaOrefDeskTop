@@ -197,3 +197,4 @@ D:\עבודה\PikodHaOrefDeskTop\Client\obj\Debug\net6.0-windows\refint\PikodAor
 D:\עבודה\PikodHaOrefDeskTop\Client\obj\Debug\net6.0-windows\PikodAorfLayout.pdb
 D:\עבודה\PikodHaOrefDeskTop\Client\obj\Debug\net6.0-windows\PikodAorfLayout.genruntimeconfig.cache
 D:\עבודה\PikodHaOrefDeskTop\Client\obj\Debug\net6.0-windows\ref\PikodAorfLayout.dll
+D:\עבודה\PikodHaOrefDeskTop\Client\obj\Debug\net6.0-windows\PikodAorfLayout.sourcelink.json
