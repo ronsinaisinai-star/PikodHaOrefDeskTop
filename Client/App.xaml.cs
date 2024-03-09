@@ -57,7 +57,7 @@ namespace PikodAorfLayout
             loadstartupjson();
             if (isfirst)
             {
-                startupadder();
+            //    startupadder();
                 Setting settingwin = new Setting();
                 settingwin.Show();
             }
